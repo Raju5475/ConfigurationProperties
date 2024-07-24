@@ -1,25 +1,19 @@
-spring:
-    boot:
-    admin:
-      client:
-        url: http://localhost:8022/
-    
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    password: root
-    url: jdbc:mysql://localhost:3306/majpro
-    username: root
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+datasource:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  password: root
+  url: jdbc:mysql://localhost:3306/majpro
+  username: root
+jpa:
+  hibernate:
+    ddl-auto: update
+  show-sql: true
 
 server:
   port: 8033
 
-  auth-service:
- messages: 
-  userReg: User Created
-  userRegErr: User Creation Failed
-  login: Login Success
-  loginErr: Invalid Credentials  
+auth-service:
+  messages: 
+    userReg: User Created
+    userRegErr: User Creation Failed
+    login: Login Success
+    loginErr: Invalid Credentials
