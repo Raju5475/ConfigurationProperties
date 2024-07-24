@@ -1,2 +1,2 @@
 # ConfigurationProperties
-## ECommece Project Files
+## ECommece Configuration Files
