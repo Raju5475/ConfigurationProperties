@@ -9,30 +9,37 @@ spring:
       ddl-auto: create
     show-sql: true
 
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+
 server:
   port: 8044
 
-  product-service:
-    messages:
-    categoryAdded: Category Added SucessFully
+product-service:
+  messages:
+    categoryAdded: Category Added Successfully
     categoryAddErr: Failed to Add Category
-    categoryUpadate: Category Updated SucessFully
+    categoryUpdate: Category Updated Successfully
     categoryUpdateErr: Failed to Update Category
-    categoryFetch: Category Fetched All SucessFully
-    categortFetchErr: Failed to Fetch All Category
-    categoryDelete: Category delted SucessFully
-    categoryDeleteErr: Falied to Delete Category
-    categorySelect: Category Retrived SucessFully
-    categorySelectErr: Category Failed to Retrive
-    ProductFetch: All Products Fteched SucessFully
-    ProductFetchErr: Failed to Ftech All Products
-    ProductAdd: Product Added Sucessfully
-    ProductAddErr: Failed to Add The Product
-    ProductUpdate: Product Updated SucessFully
-    ProductUpdateErr: Failed to Update the Product
-    ProductSelect: Selected Pzroduct Feteched Sucessfully
-    ProductSelectErr: Failed to Fetch Selected Product
-    DeleteProduct: Product Deleted SucessFully
-    DeleteProductErr: Failed to Delete the product
-    StockUpdate: Stocks Updated SucessFully
-    StockUpdateErr: Failed to Update Stocks
+    categoryFetch: Category Fetched All Successfully
+    categoryFetchErr: Failed to Fetch All Categories
+    categoryDelete: Category Deleted Successfully
+    categoryDeleteErr: Failed to Delete Category
+    categorySelect: Category Retrieved Successfully
+    categorySelectErr: Category Failed to Retrieve
+    productFetch: All Products Fetched Successfully
+    productFetchErr: Failed to Fetch All Products
+    productAdd: Product Added Successfully
+    productAddErr: Failed to Add Product
+    productUpdate: Product Updated Successfully
+    productUpdateErr: Failed to Update Product
+    productSelect: Selected Product Fetched Successfully
+    productSelectErr: Failed to Fetch Selected Product
+    deleteProduct: Product Deleted Successfully
+    deleteProductErr: Failed to Delete Product
+    stockUpdate: Stocks Updated Successfully
+    stockUpdateErr: Failed to Update Stocks
+
