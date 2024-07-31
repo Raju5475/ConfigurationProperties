@@ -1,1 +1,38 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/majpro
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
+server:
+  port: 8044
+
+  product-service:
+    messages:
+    categoryAdded: Category Added SucessFully
+    categoryAddErr: Failed to Add Category
+    categoryUpadate: Category Updated SucessFully
+    categoryUpdateErr: Failed to Update Category
+    categoryFetch: Category Fetched All SucessFully
+    categortFetchErr: Failed to Fetch All Category
+    categoryDelete: Category delted SucessFully
+    categoryDeleteErr: Falied to Delete Category
+    categorySelect: Category Retrived SucessFully
+    categorySelectErr: Category Failed to Retrive
+    ProductFetch: All Products Fteched SucessFully
+    ProductFetchErr: Failed to Ftech All Products
+    ProductAdd: Product Added Sucessfully
+    ProductAddErr: Failed to Add The Product
+    ProductUpdate: Product Updated SucessFully
+    ProductUpdateErr: Failed to Update the Product
+    ProductSelect: Selected Pzroduct Feteched Sucessfully
+    ProductSelectErr: Failed to Fetch Selected Product
+    DeleteProduct: Product Deleted SucessFully
+    DeleteProductErr: Failed to Delete the product
+    StockUpdate: Stocks Updated SucessFully
+    StockUpdateErr: Failed to Update Stocks
